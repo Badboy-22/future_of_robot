@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로봇의 역사와 미래</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="gear" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="20" stroke-dasharray="6 4.2" stroke-width="8" />
+      <circle cx="32" cy="32" r="14" />
+      <circle cx="32" cy="32" r="5" />
+    </symbol>
+    <symbol id="stage" viewBox="0 0 64 64">
+      <path d="M8 8h48M12 8v44M52 8v44M8 56h48" />
+      <rect x="24" y="26" width="16" height="14" rx="2" />
+      <path d="M32 26v-6M28 33h.1M36 33h.1M26 40v8M38 40v8" />
+    </symbol>
+    <symbol id="arm" viewBox="0 0 64 64">
+      <path d="M12 56h26M25 56V40l16-14 12 6" />
+      <circle cx="25" cy="40" r="3" />
+      <circle cx="41" cy="26" r="3" />
+      <path d="M53 32l-3 9M53 32l6 6" />
+    </symbol>
+    <symbol id="human" viewBox="0 0 64 64">
+      <circle cx="32" cy="12" r="6" />
+      <rect x="22" y="22" width="20" height="18" rx="3" />
+      <path d="M22 26l-10 14M42 26l10 14M26 40l-3 18M38 40l3 18" />
+    </symbol>
+    <symbol id="vac" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="22" />
+      <circle cx="32" cy="32" r="7" />
+      <path d="M14 20l8 5M50 20l-8 5" />
+    </symbol>
+    <symbol id="chip" viewBox="0 0 64 64">
+      <rect x="16" y="16" width="32" height="32" rx="3" />
+      <rect x="26" y="26" width="12" height="12" />
+      <path d="M24 8v8M32 8v8M40 8v8M24 48v8M32 48v8M40 48v8M8 24h8M8 32h8M8 40h8M48 24h8M48 32h8M48 40h8" />
+    </symbol>
+    <symbol id="loom" viewBox="0 0 64 64">
+      <path d="M14 10h26v12H14zM27 22v34M20 56h14M44 20l12 12M56 20L44 32" />
+    </symbol>
+    <symbol id="scale" viewBox="0 0 64 64">
+      <path d="M32 8v46M16 54h32M10 20h44M10 20l-6 14h12zM54 20l-6 14h12z" />
+    </symbol>
+  </svg>
+
+  <div class="poster">
+
+    <header class="hero">
+      <div>
+        <div class="k sg">로봇공학 · 기원전 4세기부터 미래까지</div>
+        <h1>로봇의<br>역사와 미래</h1>
+        <p>물과 톱니바퀴로 움직이던 자동인형에서, 스스로 판단하는 피지컬 AI까지. 2천 년이 넘는 흐름을 여섯 단계와 부록으로 짚어본다.</p>
+      </div>
+      <figure class="ph"><svg class="i">
+          <use href="#human" />
+        </svg><span class="slot">images/hero</span><img src="images/image_01.jpg" alt="영화 아이, 로봇의 한 장면"
+          style="object-position:center top">
+        <figcaption>영화 《아이, 로봇》 — “로봇이 교향곡을 작곡할 수 있어?”</figcaption>
+      </figure>
+    </header>
+
+    <div class="strip sg">
+      <div><b>기원전 4세기</b>자동기계</div>
+      <div><b>1920</b>로봇이라는 말</div>
+      <div><b>1961</b>산업용 로봇</div>
+      <div><b>2000</b>휴머노이드</div>
+      <div><b>지금</b>일상 속으로</div>
+      <div><b>앞으로</b>피지컬 AI</div>
+    </div>
+
+    <main class="track">
+
+      <section class="stage">
+        <div>
+          <div class="era sg">기원전 4세기 ~ 18세기 — 스스로 움직이는 꿈</div>
+          <h2>오토마타, 로봇의 먼 조상</h2>
+          <p class="lead">전기도 컴퓨터도 없던 시대, 사람들은 물·공기·증기·톱니바퀴·캠으로 스스로 움직이는 자동인형(오토마타)을 만들었다. 지능은 없었지만 ‘동작 순서를 저장해 재생한다’는
+            생각은 이미 있었다.</p>
+          <ul class="facts">
+            <li><b>신화 속 존재</b> — 크레타를 지키는 청동 거인 탈로스, 헤파이스토스의 황금 하녀. 실존한 기계는 아니다.</li>
+            <li><b>아르키타스(기원전 4세기)</b> — 공기의 힘으로 날았다고 전해지는 나무 비둘기</li>
+            <li><b>크테시비오스·헤론</b> — 물시계 인형(기원전 3세기), 증기로 열리는 신전 문·동전 성수기·자동 극장(1세기)</li>
+            <li><b>중국</b> — 『열자』 속 언사의 걷고 노래하는 인형, 3세기 마균의 지남거(톱니바퀴로 방향 보정)</li>
+            <li><b>알자자리(1136–1206)</b> — 1206년 책에 장치 50여 가지를 남김. 못 박힌 원통으로 연주 순서를 바꾸는 악단 배는 프로그램 가능 기계의 원형</li>
+            <li><b>안티키테라 기계·자격루</b> — 톱니바퀴로 천문을 계산한 기원전 2~1세기 장치, 시각이 되면 인형이 종을 치는 장영실의 자격루</li>
+          </ul>
+          <div class="note"><b>있었던 것</b> 동력·기계적 제어·반복 동작 &nbsp;/&nbsp; <b>없었던 것</b> 센서·컴퓨터·판단·학습. 그래서 고대의 ‘로봇’은 지능이 아니라
+            정해진 동작을 되풀이하는 자동인형이었다.</div>
+        </div>
+        <div class="pics">
+          <figure class="ph"><svg class="i">
+              <use href="#gear" />
+            </svg><span class="slot">images/ancient</span><img src="images/image_02.jpg" alt="알자자리의 코끼리 물시계"
+              style="object-position:center">
+            <figcaption>알자자리의 코끼리 물시계(왼쪽 필사본 그림, 오른쪽 복원 모형)</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="stage">
+        <div>
+          <div class="era sg">1920년대 — 말이 태어나다</div>
+          <h2>‘로봇’이라는 단어의 탄생</h2>
+          <p class="lead">‘로봇’은 19세기가 아니라 20세기에 생긴 말이다. 체코의 극작가 카렐 차페크가 희곡 《R.U.R.(로숨의 유니버설 로봇)》에서 처음 썼다. 1920년에 발표되고
+            이듬해 프라하에서 초연되며 널리 퍼졌다.</p>
+          <ul class="facts">
+            <li><b>어원</b> — 체코어 ‘로보타(robota)’, 강제 노동·고된 일</li>
+            <li><b>원래 맥락</b> — 봉건제 아래 농민이 지주에게 바치던 의무 노동</li>
+            <li><b>작명</b> — 단어를 처음 떠올린 사람은 카렐의 형 요제프 차페크라고 전해진다</li>
+            <li><b>정의의 확립</b> — “인간을 대신해 노동을 수행하는 인조 존재”라는 개념이 이때 언어로 자리 잡음</li>
+          </ul>
+        </div>
+        <div class="pics">
+          <figure class="ph"><svg class="i">
+              <use href="#stage" />
+            </svg><span class="slot">images/rur</span><img src="images/image_03.jpg" alt="연극 R.U.R. 공연 장면"
+              style="object-position:center">
+            <figcaption>연극 《R.U.R.》의 공연 장면</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="stage">
+        <div>
+          <div class="era sg">1950 – 1960년대 — 공장에 서다</div>
+          <h2>최초의 산업용 로봇, 유니메이트</h2>
+          <p class="lead">발명가 조지 데볼이 1954년 ‘프로그램된 물체 이송 장치’ 특허를 출원(1961년 등록)했고, 사업가 조셉 엥겔버거가 합류해 세계 최초의 로봇 기업 ‘유니메이션’을
+            세웠다. 1961년 그 결과물 ‘유니메이트’가 미국 뉴저지의 GM 공장에 투입됐다.</p>
+          <ul class="facts">
+            <li><b>맡은 일</b> — 다이캐스팅에서 나온 뜨거운 금속 부품을 꺼내 냉각수에 담그는 위험 작업, 차체 스폿 용접</li>
+            <li><b>규격</b> — 약 1.8톤(4,000파운드), 5자유도 유압식 로봇 팔</li>
+            <li><b>두뇌</b> — 자기 드럼 메모리에 동작 순서를 저장. 초기 제어 회로는 진공관, 이후 트랜지스터로 발전</li>
+            <li><b>성과</b> — 24시간 일정한 정확도로 작업해 생산성을 높이고 작업자의 사고 위험을 줄임</li>
+            <li><b>가격</b> — 1970년대 초 대당 약 3만 5천 달러</li>
+            <li><b>기록</b> — 2003년 ‘로봇 명예의 전당’ 첫 등재, 엥겔버거는 ‘로봇공학의 아버지’</li>
+          </ul>
+        </div>
+        <div class="pics">
+          <figure class="ph"><svg class="i">
+              <use href="#arm" />
+            </svg><span class="slot">images/unimate</span><img src="images/image_04.jpg" alt="자동차 조립 라인의 초기 산업용 로봇"
+              style="object-position:center">
+            <figcaption>자동차 조립 라인에서 일하는 초기 산업용 로봇</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="stage">
+        <div>
+          <div class="era sg">2000년대 — 걷고, 알아보다</div>
+          <h2>지능형 로봇과 휴머노이드의 등장</h2>
+          <p class="lead">넘어지지 않고 걷게 해주는 ZMP(제로 모멘트 포인트) 균형 제어가 완성되면서, 공장용 팔 중심이던 로봇이 사람을 닮은 ‘휴머노이드’로 넓어졌다. 공장을 벗어나 가정과
+            일상 공간에서 사람과 교감하는 로봇 연구도 활발해졌다.</p>
+          <ul class="facts">
+            <li><b>혼다 ASIMO(2000)</b> — 11월 20일 공식 발표. 키 120cm·43kg, 이족보행·계단·음성과 얼굴 인식. 2005년 달리기·제스처 해석이 추가됐고 2018년 개발
+              중단, 2022년 은퇴</li>
+            <li><b>KAIST 휴보(2004)</b> — 한국 최초의 인간형 로봇, 손가락 5개 독립 제어와 악수 힘 조절</li>
+            <li><b>소니 QRIO(2003~2006)</b> — 세계 최초로 ‘뛰는’ 휴머노이드, 춤과 공연, 넘어지면 스스로 일어남</li>
+            <li><b>NAO(2008, 알데바란)</b> — 카메라·마이크를 갖춘 교육·연구용 플랫폼으로 널리 보급</li>
+            <li><b>안드로이드</b> — 실리콘 피부와 인공 근육으로 표정을 흉내 내는 한국의 에버원, 일본의 액트로이드</li>
+          </ul>
+        </div>
+        <div class="pics">
+          <figure class="ph"><svg class="i">
+              <use href="#human" />
+            </svg><span class="slot">images/asimo</span><img src="images/image_05.jpg" alt="혼다 ASIMO"
+              style="object-position:center">
+            <figcaption>혼다의 휴머노이드 ASIMO</figcaption>
+          </figure>
+          <figure class="ph"><svg class="i">
+              <use href="#human" />
+            </svg><span class="slot">images/hubo</span><img src="images/image_06.jpg" alt="KAIST 휴보"
+              style="object-position:center 22%">
+            <figcaption>KAIST의 한국 최초 인간형 로봇 휴보</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="stage">
+        <div>
+          <div class="era sg">지금 — 일상 속으로</div>
+          <h2>생활 곳곳에 자리 잡은 로봇</h2>
+          <p class="lead">오늘날의 로봇은 사람을 완전히 대체하기보다, 번거롭거나 위험한 일을 보조하며 삶 속 깊숙이 스며들고 있다.</p>
+          <ul class="facts">
+            <li><b>가정</b> — 라이다·카메라로 공간을 지도로 그리는 로봇청소기, 자동 먼지비움과 물걸레 세척</li>
+            <li><b>서비스업</b> — 매장 서빙 로봇, 호텔·실외 라스트마일 배달 로봇</li>
+            <li><b>의료</b> — 손 떨림 없는 수술 보조 로봇(다빈치), 보행을 돕는 웨어러블 재활 로봇</li>
+            <li><b>물류</b> — 창고를 누비는 자율이동로봇(AMR)과 무인운반차(AGV)</li>
+          </ul>
+        </div>
+        <div class="pics">
+          <figure class="ph"><img src="images/image_07.jpg" alt="수술 보조 로봇 다빈치">
+            <figcaption>수술 보조 로봇 다빈치</figcaption>
+          </figure>
+          <figure class="ph"><img src="images/image_08.jpg" alt="물류 창고의 자율이동로봇">
+            <figcaption>물류 창고를 누비는 자율이동로봇(AMR)</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="stage">
+        <div>
+          <div class="era sg">앞으로 — 스스로 판단하다</div>
+          <h2>피지컬 AI 시대의 로봇</h2>
+          <p class="lead">정해진 동작을 반복하던 기계에서, AI와 고성능 센서로 스스로 판단하고 현실 세계와 물리적으로 상호작용하는 ‘피지컬 AI’ 로봇으로의 전환이 예상된다. 흐름은 ‘명령 →
+            행동’에서 ‘상황 이해 → 판단 → 행동’으로 바뀐다.</p>
+          <ul class="facts">
+            <li><b>휴머노이드</b> — 관절 각도를 일일이 코딩하는 대신 종단간(End-to-End) 학습으로 사람의 작업 영상을 보고 동작을 익힘. 촉각 센서로 계란과 쇠 공구를 손끝으로 구분
+            </li>
+            <li><b>가정용 헬퍼</b> — 청소를 넘어 정리·빨래 개기·식기세척기 정리까지. 한 로봇이 익힌 경험을 다른 로봇이 함께 학습</li>
+            <li><b>의료·돌봄</b> — 미세 혈관 수술을 보조하는 정밀 로봇, 근육 반응을 읽어 힘을 보태는 외골격 재활 로봇</li>
+            <li><b>군집 로봇</b> — 개미·벌처럼 소형 로봇 수십~수백 대가 재난 구조, 우주·해저 탐사, 스마트팜 수확을 나눠 맡음</li>
+            <li><b>협동로봇(cobot)</b> — 사람의 움직임을 감지하고 속도를 조절하며 같은 공간에서 안전하게 일함</li>
+            <li><b>정교해지는 감각</b> — 카메라, 라이다, 촉각·소리·온도 센서를 함께 써서 “컵을 세게 잡으면 깨진다”까지 고려</li>
+          </ul>
+          <div class="note">미래는 예측일 뿐 확정된 것이 아니다. 로봇은 정해진 목표 안에서 움직이고, 그 목표가 무엇이어야 하는지는 여전히 사람이 정한다.</div>
+        </div>
+        <div class="pics">
+          <figure class="ph"><svg class="i">
+              <use href="#chip" />
+            </svg><span class="slot">images/future</span><img src="images/image_09.jpg" alt="공장에서 사람과 함께 일하는 휴머노이드"
+              style="object-position:center">
+            <figcaption>사람과 나란히 부품을 다루는 피지컬 AI 휴머노이드</figcaption>
+          </figure>
+        </div>
+      </section>
+
+    </main>
+
+    <section class="appx">
+      <div class="tag sg">부록</div>
+      <h2>로봇을 둘러싼 사회적 우려</h2>
+      <p>로봇과 자동화는 생산성을 크게 높였지만, 일자리와 안전에 대한 우려도 함께 키웠다. 시대가 바뀌면서 반대의 모습도 달라지고 있다.</p>
+      <div class="cols">
+        <div>
+          <figure class="ph wide"><svg class="i">
+              <use href="#loom" />
+            </svg><span class="slot">images/luddite</span><img src="images/image_10.jpg" alt="방직기를 부수는 러다이트"
+              style="object-position:center">
+            <figcaption>방직기를 부수는 러다이트 운동</figcaption>
+          </figure>
+          <h3>과거</h3>
+          <p><b>러다이트 운동(1811~1816)</b> — 영국 산업혁명기, 방직기 도입으로 일자리와 임금을 잃은 숙련 노동자들이 밤중에 공장에 들어가 기계를 부쉈다. 기술 반대 운동의 대명사가 됐다.
+          </p>
+          <p><b>초기 우려</b> — 생계 위협, 노동 조건 악화, 인간성 상실</p>
+        </div>
+        <div>
+          <figure class="ph wide"><svg class="i">
+              <use href="#human" />
+            </svg><span class="slot">images/atlas</span><img src="images/image_11.jpg" alt="보스턴 다이내믹스 아틀라스"
+              style="object-position:center">
+            <figcaption>보스턴 다이내믹스의 휴머노이드 아틀라스</figcaption>
+          </figure>
+          <h3>현재</h3>
+          <p><b>로봇택시 방해 시위</b> — 샌프란시스코 등지에서 무인 택시의 길을 막거나 보닛에 교통 콘을 올림. 도로 안전과 운전직 일자리가 쟁점이었다.</p>
+          <p><b>2023 할리우드 작가·배우 파업</b> — 생성형 AI의 초상권·시나리오권 침해 우려</p>
+          <p><b>2026 현대차 노조 부분파업</b> — 7월 13~15일 사흘간. 임금 협상과 함께 아틀라스 도입에 따른 고용 불안이 핵심 쟁점이었고, WSJ·포브스 등이 휴머노이드를 둘러싼 첫
+            파업으로 보도했다. 현대차그룹은 현대차·기아 공장에 아틀라스를 2만 5천 대 이상 투입할 계획이다.</p>
+        </div>
+        <div>
+          <figure class="ph wide"><svg class="i">
+              <use href="#scale" />
+            </svg><span class="slot">images/robottax</span><img src="images/image_12.jpg" alt="인간과 인공지능을 다룬 영화 속 장면"
+              style="object-position:center 30%">
+            <figcaption>인간과 인공지능의 공존을 상상한 영화 속 장면</figcaption>
+          </figure>
+          <h3>미래 전망</h3>
+          <p><b>네오 러다이트</b> — 로봇 파괴나 해킹, 통신 방해 같은 물리·디지털 결합 시위 가능성</p>
+          <p><b>로봇세·기본소득</b> — 노동 대체로 커지는 부의 불평등을 줄이려는 정책 논의</p>
+          <p><b>윤리적 쟁점</b> — 자율살상무기(LAWS), 돌봄에서 인간의 정서 교류를 로봇이 대신하는 문제</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div class="brand">로봇의 역사와 미래</div>
+      <div>고대의 자동인형부터 오늘의 공장 갈등까지, 로봇은 계속 우리 곁을 넓혀가고 있다.</div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
